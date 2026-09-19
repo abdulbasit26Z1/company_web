@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Az Meer (SMC-Private) Limited - Modern 3D 4DX Ecosystem</title>
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css?v=6.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="three-canvas-container"></div>
+
+    <!-- 3D BOX FRAME AROUND WEB -->
+    <div class="web-3d-frame">
+
+    <div class="announcement-bar">
+        <div class="bar-content">
+            <span class="badge">3D Rotating WebGL</span>
+            <span>Az Meer (SMC-Private) Limited — Premier Software & 3D Web Solutions</span>
+        </div>
+        <div class="bar-actions">
+            <a href="contact.html" style="color:#fff; font-weight:700;"><i class="fa-solid fa-phone"></i> +92 332 8657885</a>
+        </div>
+    </div>
+
+    <!-- FIXED NAVBAR WITH DESKTOP DROPDOWN & LOGIN BUTTON -->
+    <header class="navbar-header">
+        <div class="container navbar-container">
+            <a href="index.html" class="brand-logo">
+                <i class="fa-solid fa-cube gradient-text"></i>
+                <div>
+                    Az Meer <span>Limited</span>
+                </div>
+            </a>
+
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    
+                    <!-- DESKTOP DROPDOWN MENU FOR EXPLORE -->
+                    <li class="nav-dropdown">
+                        <span class="nav-link nav-dropdown-toggle active">
+                            Explore <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                        <ul class="dropdown-menu">
+                            <li><a href="top-services.html" class="dropdown-item"><i class="fa-solid fa-crown"></i> Top Services</a></li>
+                            <li><a href="portfolio.html" class="dropdown-item"><i class="fa-solid fa-briefcase"></i> Portfolio</a></li>
+                            <li><a href="apps.html" class="dropdown-item"><i class="fa-brands fa-google-play"></i> Our Apps</a></li>
+                            <li><a href="team.html" class="dropdown-item active"><i class="fa-solid fa-users"></i> Our Team</a></li>
+                            <li><a href="blogs.html" class="dropdown-item"><i class="fa-solid fa-newspaper"></i> Blogs</a></li>
+                            <li><a href="faqs.html" class="dropdown-item"><i class="fa-solid fa-circle-question"></i> FAQs</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="currency-selector">
+                    <select class="currency-select">
+                        <option value="USD">USD ($)</option>
+                        <option value="PKR">PKR (Rs)</option>
+                        <option value="GBP">GBP (£)</option>
+                    </select>
+                    <i class="fa-solid fa-chevron-down currency-icon"></i>
+                </div>
+                <!-- LOGIN BUTTON CLEANLY INTEGRATED IN NAVBAR -->
+                <a href="auth.html" class="btn btn-secondary btn-sm"><i class="fa-solid fa-user"></i> Login</a>
+                <button class="mobile-toggle"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header slide-in-up">
+                <div class="section-subtitle">The Minds Behind Innovation</div>
+                <h2 class="section-title">Meet Our <span class="gradient-text">Core Experts</span></h2>
+            </div>
+
+            <div class="grid-4">
+                <div class="glass-card slide-in-left delay-1" style="text-align:center;">
+                    <div class="team-avatar-box" style="margin:0 auto 1.25rem;"><i class="fa-solid fa-user-gear"></i></div>
+                    <h3>Azmeer Hussain</h3>
+                    <p class="tag-badge">Founder & CEO</p>
+                </div>
+                <div class="glass-card slide-in-up delay-2" style="text-align:center;">
+                    <div class="team-avatar-box" style="margin:0 auto 1.25rem; background:var(--accent-gradient);"><i class="fa-solid fa-code-branch"></i></div>
+                    <h3>Syed M. Ali</h3>
+                    <p class="tag-badge">Lead Full-Stack Dev</p>
+                </div>
+                <div class="glass-card slide-in-up delay-3" style="text-align:center;">
+                    <div class="team-avatar-box" style="margin:0 auto 1.25rem; background:linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);"><i class="fa-solid fa-palette"></i></div>
+                    <h3>Ayesha Malik</h3>
+                    <p class="tag-badge">UI/UX Lead</p>
+                </div>
+                <div class="glass-card slide-in-right delay-4" style="text-align:center;">
+                    <div class="team-avatar-box" style="margin:0 auto 1.25rem; background:linear-gradient(135deg, #10b981 0%, #059669 100%);"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Tariq Mahmood</h3>
+                    <p class="tag-badge">Cloud Security Lead</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="brand-logo">
+                        <i class="fa-solid fa-cube gradient-text"></i>
+                        <span>Az Meer (SMC-Private) Limited</span>
+                    </a>
+                    <p>Innovating your digital future with world-class software development, 3D WebGL interfaces, mobile applications, and strategic digital solutions.</p>
+                    <div class="social-links" style="margin-top:1.5rem;">
+                        <a href="#" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Our Portfolio</a></li>
+                        <li><a href="blogs.html">Our Blogs</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Core Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Mobile Applications</a></li>
+                        <li><a href="services.html">UI/UX Design</a></li>
+                        <li><a href="services.html">Digital Marketing</a></li>
+                        <li><a href="services.html">Cloud & DevOps</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-links" style="color:var(--text-muted);">
+                        <li><i class="fa-solid fa-location-dot gradient-text"></i> Raiwind Road, Lahore, Pakistan</li>
+                        <li><i class="fa-solid fa-phone gradient-text"></i> +92 332 8657885</li>
+                        <li><i class="fa-solid fa-phone gradient-text"></i> +92 370 0602339</li>
+                        <li><i class="fa-solid fa-envelope gradient-text"></i> teamabhpk@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Az Meer (SMC-Private) Limited. All Rights Reserved.</p>
+                <div>
+                    <a href="privacy.html" style="margin-right:1.5rem; color:var(--text-muted);">Privacy Policy</a>
+                    <a href="faqs.html" style="color:var(--text-muted);">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </div> <!-- END 3D BOX FRAME AROUND WEB -->
+
+    <!-- Global Modal Overlay -->
+    <div class="modal-overlay" id="global-modal-overlay">
+        <div class="modal-container">
+            <button class="modal-close" id="modal-close-btn"><i class="fa-solid fa-xmark"></i></button>
+            <div id="modal-body-content"></div>
+        </div>
+    </div>
+
+    <!-- Floating Live Chat Button -->
+    <div class="live-chat-float" onclick="openModal('chat')">
+        <i class="fa-solid fa-headset"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="three.min.js"></script>
+    <script>if (typeof THREE === "undefined") { document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"><\/script>'); }</script>
+    <script src="siteData.js?v=6.0"></script>
+    <script src="three-scene.js?v=6.0"></script>
+    <script src="app.js?v=6.0"></script>
+</body>
+</html>

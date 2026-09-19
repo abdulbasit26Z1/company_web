@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Az Meer (SMC-Private) Limited - Modern 3D 4DX Ecosystem</title>
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css?v=5.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="three-canvas-container"></div>
+
+    <!-- 3D BOX FRAME AROUND WEB -->
+    <div class="web-3d-frame">
+
+    <div class="announcement-bar">
+        <div class="bar-content">
+            <span class="badge">3D Rotating WebGL</span>
+            <span>Az Meer (SMC-Private) Limited — Premier Software & 3D Web Solutions</span>
+        </div>
+        <div class="bar-actions">
+            <a href="contact.html" style="color:#fff; font-weight:700;"><i class="fa-solid fa-phone"></i> +92 332 8657885</a>
+        </div>
+    </div>
+
+    <!-- FIXED NAVBAR WITH DESKTOP DROPDOWN & LOGIN BUTTON -->
+    <header class="navbar-header">
+        <div class="container navbar-container">
+            <a href="index.html" class="brand-logo">
+                <i class="fa-solid fa-cube gradient-text"></i>
+                <div>
+                    Az Meer <span>Limited</span>
+                </div>
+            </a>
+
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    
+                    <!-- DESKTOP DROPDOWN MENU FOR EXPLORE -->
+                    <li class="nav-dropdown">
+                        <span class="nav-link nav-dropdown-toggle">
+                            Explore <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                        <ul class="dropdown-menu">
+                            <li><a href="top-services.html" class="dropdown-item"><i class="fa-solid fa-crown"></i> Top Services</a></li>
+                            <li><a href="portfolio.html" class="dropdown-item"><i class="fa-solid fa-briefcase"></i> Portfolio</a></li>
+                            <li><a href="apps.html" class="dropdown-item"><i class="fa-brands fa-google-play"></i> Our Apps</a></li>
+                            <li><a href="team.html" class="dropdown-item"><i class="fa-solid fa-users"></i> Our Team</a></li>
+                            <li><a href="blogs.html" class="dropdown-item"><i class="fa-solid fa-newspaper"></i> Blogs</a></li>
+                            <li><a href="faqs.html" class="dropdown-item"><i class="fa-solid fa-circle-question"></i> FAQs</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="currency-selector">
+                    <select class="currency-select">
+                        <option value="USD">USD ($)</option>
+                        <option value="PKR">PKR (Rs)</option>
+                        <option value="GBP">GBP (£)</option>
+                    </select>
+                    <i class="fa-solid fa-chevron-down currency-icon"></i>
+                </div>
+                <!-- LOGIN BUTTON CLEANLY INTEGRATED IN NAVBAR -->
+                <a href="auth.html" class="btn btn-secondary btn-sm"><i class="fa-solid fa-user"></i> Login</a>
+                <button class="mobile-toggle"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="container hero-grid">
+            <div class="slide-in-left">
+                <div class="hero-badge"><i class="fa-solid fa-sparkles"></i> 3D Rotating WebGL Architecture</div>
+                <h1 class="hero-title">Empowering Businesses Through <span class="gradient-text">Digital Excellence</span></h1>
+                <p class="hero-subtitle">Az Meer (SMC-Private) Limited is your strategic partner in navigating the tech landscape. We engineer scalable web platforms, native mobile apps, and high-converting 3D digital experiences.</p>
+                <div class="hero-cta">
+                    <a href="services.html" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Explore Services</a>
+                    <a href="contact.html" class="btn btn-secondary"><i class="fa-solid fa-comments"></i> Get Free Quote</a>
+                </div>
+
+                <div class="hero-stats-row">
+                    <div class="stat-item">
+                        <h3>500+</h3>
+                        <p>Projects Delivered</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>98%</h3>
+                        <p>Client Satisfaction</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>20+</h3>
+                        <p>Global Countries</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Interactive 3D Card / Canvas Focus -->
+            <div class="glass-card slide-in-right" style="text-align:center; padding:2.5rem 2rem;">
+                <div style="width:80px; height:80px; border-radius:50%; background:var(--primary-gradient); color:#fff; display:inline-flex; align-items:center; justify-content:center; font-size:2.2rem; margin-bottom:1.5rem; box-shadow:0 10px 25px rgba(37, 99, 235, 0.3);">
+                    <i class="fa-solid fa-cubes"></i>
+                </div>
+                <h3>3D Rotating Box Engine</h3>
+                <p style="color:var(--text-muted); font-size:0.95rem; margin-top:0.5rem;">Scroll down to observe the 3D WebGL Box Room rotate in synchronization with your scroll trajectory!</p>
+                <button class="btn btn-primary btn-sm" style="margin-top:1rem;" data-open-modal="quote" data-item-title="Full Custom 3D Web Solution" data-price-usd="1299"><i class="fa-solid fa-wand-magic-sparkles"></i> Launch 3D Project</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 1. ABOUT PREVIEW SECTION -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header slide-in-up">
+                <div class="section-subtitle">About Az Meer</div>
+                <h2 class="section-title">Leading the Way in <span class="gradient-text">Software Innovation</span></h2>
+                <p style="color:var(--text-muted);">From local origins to global execution across 20+ countries with registered SMC-Private Limited status.</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="glass-card slide-in-left delay-1">
+                    <div class="tag-badge">2020</div>
+                    <h3>The Spark</h3>
+                    <p style="color:var(--text-muted); font-size:0.9rem;">Founded with a simple idea: build technology that solves real-world problems for ambitious startups with custom web platforms.</p>
+                </div>
+                <div class="glass-card slide-in-up delay-2">
+                    <div class="tag-badge">2022</div>
+                    <h3>Global Expansion</h3>
+                    <p style="color:var(--text-muted); font-size:0.9rem;">Scaled operations into mobile application development, cloud architecture, and cross-border enterprise delivery in Europe, USA, & UAE.</p>
+                </div>
+                <div class="glass-card slide-in-right delay-3">
+                    <div class="tag-badge">2024</div>
+                    <h3>SMC-Private Ltd</h3>
+                    <p style="color:var(--text-muted); font-size:0.9rem;">Registered as Az Meer (SMC-Private) Limited, delivering AI-driven solutions, 3D WebGL portals, and zero-trust cybersecurity.</p>
+                </div>
+            </div>
+            <div style="text-align:center; margin-top:2rem;">
+                <a href="about.html" class="btn btn-secondary btn-sm"><i class="fa-solid fa-arrow-right"></i> Read Full Story</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. SERVICES PREVIEW SECTION -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header slide-in-up">
+                <div class="section-subtitle">Marketplace Services</div>
+                <h2 class="section-title">Solutions Built to <span class="gradient-text">Scale & Perform</span></h2>
+            </div>
+
+            <div class="grid-3">
+                <div class="glass-card slide-in-left delay-1">
+                    <div class="service-icon-box"><i class="fa-solid fa-code"></i></div>
+                    <h3>Web Development</h3>
+                    <p style="color:var(--text-muted); font-size:0.9rem;">Custom React, Vue, and WebGL architectures for max speed, responsiveness, and SEO visibility.</p>
+                    <div class="service-price-tag" data-price-usd="499" data-price-period="/ project">$499 <span>/ project</span></div>
+                    <button class="btn btn-primary btn-sm" style="width:100%;" data-open-modal="order" data-item-title="Web Development" data-price-usd="499">Select Service</button>
+                </div>
+
+                <div class="glass-card slide-in-up delay-2">
+                    <div class="service-icon-box"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                    <h3>Mobile Applications</h3>
+                    <p style="color:var(--text-muted); font-size:0.9rem;">Native Android & iOS apps built with Flutter for 60fps speed, push notifications, and offline sync.</p>
+                    <div class="service-price-tag" data-price-usd="799" data-price-period="/ app">$799 <span>/ app</span></div>
+                    <button class="btn btn-primary btn-sm" style="width:100%;" data-open-modal="order" data-item-title="Mobile Applications" data-price-usd="799">Select Service</button>
+                </div>
+
+                <div class="glass-card slide-in-right delay-3">
+                    <div class="service-icon-box"><i class="fa-solid fa-cloud"></i></div>
+                    <h3>Cloud & DevOps</h3>
+                    <p style="color:var(--text-muted); font-size:0.9rem;">Scalable AWS/GCP infrastructure, Kubernetes cluster auto-scaling, and automated CI/CD pipelines.</p>
+                    <div class="service-price-tag" data-price-usd="899" data-price-period="/ setup">$899 <span>/ setup</span></div>
+                    <button class="btn btn-primary btn-sm" style="width:100%;" data-open-modal="order" data-item-title="Cloud & DevOps" data-price-usd="899">Select Service</button>
+                </div>
+            </div>
+            <div style="text-align:center; margin-top:2rem;">
+                <a href="services.html" class="btn btn-secondary btn-sm"><i class="fa-solid fa-layer-group"></i> View All Marketplace Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. TOP / ELITE SERVICES SPOTLIGHT -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header slide-in-up">
+                <div class="section-subtitle">Elite Tier Offerings</div>
+                <h2 class="section-title">Enterprise <span class="gradient-text">Top Services</span></h2>
+            </div>
+
+            <div class="grid-2">
+                <div class="glass-card slide-in-left" style="border:2px solid var(--primary);">
+                    <div class="tag-badge" style="background:var(--primary); color:#fff;">Elite Tier</div>
+                    <h3 style="margin-top:0.5rem;">Enterprise Portal Engineering</h3>
+                    <p style="color:var(--text-muted); font-size:0.9rem;">Dedicated Lead Architect team for complex corporate portals, multi-tenant databases, custom AI engines, and 24/7 VIP SLA.</p>
+                    <div class="service-price-tag" data-price-usd="2499" data-price-period="/ complete setup">$2,499 <span>/ complete setup</span></div>
+                    <a href="top-services.html" class="btn btn-primary btn-sm"><i class="fa-solid fa-crown"></i> Learn More</a>
+                </div>
+
+                <div class="glass-card slide-in-right" style="border:2px solid var(--gold-accent);">
+                    <div class="tag-badge" style="background:var(--gold-accent); color:#fff;">AI Core</div>
+                    <h3 style="margin-top:0.5rem;">AI Integration & Automation Suite</h3>
+                    <p style="color:var(--text-muted); font-size:0.9rem;">Custom LLM fine-tuning, automated workflow bots, and predictive analytics dashboards built directly into your workflow.</p>
+                    <div class="service-price-tag" data-price-usd="1999" data-price-period="/ suite setup">$1,999 <span>/ suite setup</span></div>
+                    <a href="top-services.html" class="btn btn-primary btn-sm"><i class="fa-solid fa-crown"></i> Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. PORTFOLIO PREVIEW SECTION -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header slide-in-up">
+                <div class="section-subtitle">Portfolio Spotlight</div>
+                <h2 class="section-title">Our Recent <span class="gradient-text">Masterpieces</span></h2>
+            </div>
+
+            <div class="grid-2">
+                <div class="glass-card slide-in-left">
+                    <div class="portfolio-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Enterprise Hub">
+                    </div>
+                    <div class="tag-badge">Web Apps</div>
+                    <h3 style="margin-top:0.5rem;">The Next-Gen Enterprise Hub</h3>
+                    <p style="color:var(--text-muted); font-size:0.9rem;">Integrated AI tracking and real-time analytics for a global logistics leader, yielding +45% operational efficiency.</p>
+                </div>
+
+                <div class="glass-card slide-in-right">
+                    <div class="portfolio-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80" alt="FinTech Wallet">
+                    </div>
+                    <div class="tag-badge">Mobile Apps</div>
+                    <h3 style="margin-top:0.5rem;">FinTech Digital Wallet</h3>
+                    <p style="color:var(--text-muted); font-size:0.9rem;">High-security mobile banking app built with Flutter and cryptographic AES-256 encryption serving 200K+ users.</p>
+                </div>
+            </div>
+            <div style="text-align:center; margin-top:2rem;">
+                <a href="portfolio.html" class="btn btn-secondary btn-sm"><i class="fa-solid fa-briefcase"></i> View Full Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. OUR APPS PREVIEW -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header slide-in-up">
+                <div class="section-subtitle">Google Play Store</div>
+                <h2 class="section-title">Flagship <span class="gradient-text">Mobile Apps</span></h2>
+            </div>
+
+            <div class="grid-3">
+                <div class="glass-card slide-in-left delay-1">
+                    <div class="app-card-header">
+                        <div class="app-icon"><i class="fa-solid fa-lock"></i></div>
+                        <div>
+                            <h3>AzCrypt</h3>
+                            <div class="app-rating"><i class="fa-solid fa-star"></i> 4.9 (5K+)</div>
+                        </div>
+                    </div>
+                    <p style="color:var(--text-muted); font-size:0.875rem;">High-level cryptographic encryption tool for securing sensitive data with modern algorithms.</p>
+                    <a href="apps.html" class="btn btn-secondary btn-sm" style="width:100%;"><i class="fa-brands fa-google-play"></i> App Details</a>
+                </div>
+
+                <div class="glass-card slide-in-up delay-2">
+                    <div class="app-card-header">
+                        <div class="app-icon" style="background:var(--primary-gradient);"><i class="fa-solid fa-calculator"></i></div>
+                        <div>
+                            <h3>Calculator</h3>
+                            <div class="app-rating"><i class="fa-solid fa-star"></i> 4.8 (3.5K+)</div>
+                        </div>
+                    </div>
+                    <p style="color:var(--text-muted); font-size:0.875rem;">Productivity calculator with scientific modes, history logs, and unit converters.</p>
+                    <a href="apps.html" class="btn btn-secondary btn-sm" style="width:100%;"><i class="fa-brands fa-google-play"></i> App Details</a>
+                </div>
+
+                <div class="glass-card slide-in-right delay-3">
+                    <div class="app-card-header">
+                        <div class="app-icon" style="background:linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);"><i class="fa-solid fa-sun"></i></div>
+                        <div>
+                            <h3>Sunflower Sim</h3>
+                            <div class="app-rating"><i class="fa-solid fa-star"></i> 4.7 (2K+)</div>
+                        </div>
+                    </div>
+                    <p style="color:var(--text-muted); font-size:0.875rem;">3D botanical growth simulation with real-time physics dynamics and atmospheric audio.</p>
+                    <a href="apps.html" class="btn btn-secondary btn-sm" style="width:100%;"><i class="fa-brands fa-google-play"></i> App Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. TEAM PREVIEW -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header slide-in-up">
+                <div class="section-subtitle">Leadership & Architects</div>
+                <h2 class="section-title">Meet Our <span class="gradient-text">Core Experts</span></h2>
+            </div>
+
+            <div class="grid-4">
+                <div class="glass-card slide-in-left delay-1" style="text-align:center;">
+                    <div class="team-avatar-box" style="margin:0 auto 1rem;"><i class="fa-solid fa-user-gear"></i></div>
+                    <h3>Azmeer Hussain</h3>
+                    <p class="tag-badge">Founder & CEO</p>
+                </div>
+
+                <div class="glass-card slide-in-up delay-2" style="text-align:center;">
+                    <div class="team-avatar-box" style="margin:0 auto 1rem; background:var(--accent-gradient);"><i class="fa-solid fa-code-branch"></i></div>
+                    <h3>Syed M. Ali</h3>
+                    <p class="tag-badge">Lead Full-Stack</p>
+                </div>
+
+                <div class="glass-card slide-in-up delay-3" style="text-align:center;">
+                    <div class="team-avatar-box" style="margin:0 auto 1rem; background:linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);"><i class="fa-solid fa-palette"></i></div>
+                    <h3>Ayesha Malik</h3>
+                    <p class="tag-badge">UI/UX Lead</p>
+                </div>
+
+                <div class="glass-card slide-in-right delay-4" style="text-align:center;">
+                    <div class="team-avatar-box" style="margin:0 auto 1rem; background:linear-gradient(135deg, #10b981 0%, #059669 100%);"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Tariq Mahmood</h3>
+                    <p class="tag-badge">Security Lead</p>
+                </div>
+            </div>
+            <div style="text-align:center; margin-top:2rem;">
+                <a href="team.html" class="btn btn-secondary btn-sm"><i class="fa-solid fa-users"></i> Full Team & Careers</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. BLOGS PREVIEW -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header slide-in-up">
+                <div class="section-subtitle">Tech Insights</div>
+                <h2 class="section-title">Latest <span class="gradient-text">Blogs & News</span></h2>
+            </div>
+
+            <div class="grid-3">
+                <div class="glass-card slide-in-left delay-1">
+                    <div class="tag-badge">Tech Trends</div>
+                    <h3 style="margin-top:0.5rem; font-size:1.1rem;">3D Interactions & AI in Web</h3>
+                    <p style="color:var(--text-muted); font-size:0.875rem;">How Three.js, WebGL, and AI reshape user experience.</p>
+                </div>
+
+                <div class="glass-card slide-in-up delay-2">
+                    <div class="tag-badge">Cyber Security</div>
+                    <h3 style="margin-top:0.5rem; font-size:1.1rem;">Securing Enterprise Apps</h3>
+                    <p style="color:var(--text-muted); font-size:0.875rem;">Practical guide to AES-256 encryption and zero-trust.</p>
+                </div>
+
+                <div class="glass-card slide-in-right delay-3">
+                    <div class="tag-badge">Mobile Apps</div>
+                    <h3 style="margin-top:0.5rem; font-size:1.1rem;">Cross-Platform Mobile Dev</h3>
+                    <p style="color:var(--text-muted); font-size:0.875rem;">Saving 40% development time with Flutter architecture.</p>
+                </div>
+            </div>
+            <div style="text-align:center; margin-top:2rem;">
+                <a href="blogs.html" class="btn btn-secondary btn-sm"><i class="fa-solid fa-newspaper"></i> Read All Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. FAQS PREVIEW -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header slide-in-up">
+                <div class="section-subtitle">Quick Answers</div>
+                <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+            </div>
+
+            <div style="max-width:800px; margin:0 auto;">
+                <div class="faq-item active slide-in-left">
+                    <div class="faq-question">
+                        <span>How do I start a project with Az Meer Limited?</span>
+                        <i class="fa-solid fa-chevron-down faq-toggle-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Contact us through our form or Marketplace. Our project managers schedule a discovery session within 2 hours.
+                    </div>
+                </div>
+
+                <div class="faq-item slide-in-right">
+                    <div class="faq-question">
+                        <span>What currencies do you support?</span>
+                        <i class="fa-solid fa-chevron-down faq-toggle-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        We support USD ($), PKR (Rs), and GBP (£). You can switch currencies in the header anytime!
+                    </div>
+                </div>
+            </div>
+            <div style="text-align:center; margin-top:2rem;">
+                <a href="faqs.html" class="btn btn-secondary btn-sm"><i class="fa-solid fa-circle-question"></i> More FAQs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. SPEED ANALYZER TOOL WIDGET -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="tool-box slide-in-up">
+                <div style="text-align:center; max-width:600px; margin:0 auto 2rem;">
+                    <div class="section-subtitle">Free Interactive Tool</div>
+                    <h2>Is Your Website Too Slow?</h2>
+                    <p style="color:var(--text-muted);">Run our instant WebGL & Page Speed audit tool to see performance scores and 3D optimization suggestions.</p>
+                </div>
+                <form id="speed-analyzer-form" style="display:flex; gap:1rem; max-width:600px; margin:0 auto; flex-wrap:wrap;">
+                    <input type="url" class="form-control" required placeholder="https://yourwebsite.com" style="flex:1; min-width:260px;">
+                    <button type="submit" class="btn btn-primary"><i class="fa-solid fa-bolt"></i> Analyze Speed</button>
+                </form>
+                <div id="analyzer-result-box" style="display:none; max-width:600px; margin:0 auto;"></div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="brand-logo">
+                        <i class="fa-solid fa-cube gradient-text"></i>
+                        <span>Az Meer (SMC-Private) Limited</span>
+                    </a>
+                    <p>Innovating your digital future with world-class software development, 3D WebGL interfaces, mobile applications, and strategic digital solutions.</p>
+                    <div class="social-links" style="margin-top:1.5rem;">
+                        <a href="#" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Our Portfolio</a></li>
+                        <li><a href="blogs.html">Our Blogs</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Core Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Mobile Applications</a></li>
+                        <li><a href="services.html">UI/UX Design</a></li>
+                        <li><a href="services.html">Digital Marketing</a></li>
+                        <li><a href="services.html">Cloud & DevOps</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-links" style="color:var(--text-muted);">
+                        <li><i class="fa-solid fa-location-dot gradient-text"></i> Raiwind Road, Lahore, Pakistan</li>
+                        <li><i class="fa-solid fa-phone gradient-text"></i> +92 332 8657885</li>
+                        <li><i class="fa-solid fa-phone gradient-text"></i> +92 370 0602339</li>
+                        <li><i class="fa-solid fa-envelope gradient-text"></i> teamabhpk@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Az Meer (SMC-Private) Limited. All Rights Reserved.</p>
+                <div>
+                    <a href="privacy.html" style="margin-right:1.5rem; color:var(--text-muted);">Privacy Policy</a>
+                    <a href="faqs.html" style="color:var(--text-muted);">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </div> <!-- END 3D BOX FRAME AROUND WEB -->
+
+    <!-- Global Modal Overlay -->
+    <div class="modal-overlay" id="global-modal-overlay">
+        <div class="modal-container">
+            <button class="modal-close" id="modal-close-btn"><i class="fa-solid fa-xmark"></i></button>
+            <div id="modal-body-content"></div>
+        </div>
+    </div>
+
+    <!-- Floating Live Chat Button -->
+    <div class="live-chat-float" onclick="openModal('chat')">
+        <i class="fa-solid fa-headset"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="three.min.js"></script>
+    <script>if (typeof THREE === "undefined") { document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"><\/script>'); }</script>
+    <script src="siteData.js?v=5.0"></script>
+    <script src="three-scene.js?v=5.0"></script>
+    <script src="app.js?v=5.0"></script>
+</body>
+</html>
